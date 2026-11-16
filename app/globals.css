@@ -845,3 +845,18 @@ footer span:last-child {
   color: var(--olive);
   font: 400 18px/1.6 var(--font-invitation-serif), serif;
 }
+
+
+.invitation-loading {
+  display: flex;
+  min-height: 100svh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 32px;
+  text-align: center;
+  color: var(--olive);
+}
+.invitation-loading p { margin: 0; }
+.invitation-loading [role="status"] { font-size: 14px; line-height: 1.8; }

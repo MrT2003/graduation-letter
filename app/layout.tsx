@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { invitationMetadata } from "@/lib/site-metadata";
 
 const invitationSerif = localFont({
   src: [
@@ -11,10 +12,7 @@ const invitationSerif = localFont({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "A Little Invitation | Minh Tri\u1ec1u",
-  description: "L\u1eddi m\u1eddi t\u1ed1t nghi\u1ec7p t\u1eeb Minh Tri\u1ec1u. H\u1eb9n b\u1ea1n ng\u00e0y 29/11/2026.",
-};
+export const metadata: Metadata = invitationMetadata();
 
 export default function RootLayout({
   children,
